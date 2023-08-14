@@ -24,13 +24,14 @@ const NavBarContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   position: fixed;
-  left: 0;
-  padding: 20px;
-  font-size: 30px;
-  font-family: copperplate;
+  /* margin: 0px; */
+  padding: 15px;
+  font-size: 20px;
+  font-family: cyreal;
   font-weight: bolder;
   text-decoration: none;
-
+  /* color: black; */
+  /* row-gap:  */
   @media (min-width: 500px) {
     display: flex;
   }
