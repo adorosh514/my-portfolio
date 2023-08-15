@@ -5,7 +5,7 @@ import React from 'react';
 const Projects = () => {
   return (
     <>
-      <h2>Projects I have completed</h2>
+      <h2>Projects</h2>
       <ProjectsContainer>
         <Placeholder>Project 1</Placeholder>
         <Placeholder>Project 2</Placeholder>
@@ -15,24 +15,29 @@ const Projects = () => {
 };
 
 const ProjectsContainer = styled.div`
-  background-color: purple;
   display: flex;
   padding: 10px;
-  margin: 10px;
-  align-content: center;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+
+  @media (min-width: 500px) {
+    display: flex;
+    flex-direction: row;
+  }
 `;
 
 const Placeholder = styled.div`
   background-color: pink;
   display: flex;
   padding: 50px;
-  margin: 50px;
-  align-content: center;
-  justify-content: flex-start;
+  /* margin: 50px; */
+  /* align-content: center; */
+  justify-content: center;
   border: 2px solid grey;
-  width: 500px;
-  height: 500px;
+  width: 60%;
+  /* height: 500px; */
   border-radius: 5%;
 `;
 

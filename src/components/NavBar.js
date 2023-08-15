@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <div>
+    <NavBarWrapper>
       <NavBarContainer>
         <Link to="/">Home</Link>
         <Link to="/About">About Me</Link>
@@ -15,15 +15,23 @@ const NavBar = () => {
       <MobileNavBarImageContainer>
         <MobileNavBarImage src="/media/hamburger.png" alt="Hamburger" />
       </MobileNavBarImageContainer>
-    </div>
+    </NavBarWrapper>
   );
 };
+
+const NavBarWrapper = styled.div`
+  background-color: green;
+
+  @media (min-width: 500px) {
+    background-color: rebeccapurple;
+  }
+`;
 
 const NavBarContainer = styled.div`
   display: none;
   flex-direction: column;
   align-items: flex-start;
-  position: fixed;
+  /* position: fixed; */
   /* margin: 0px; */
   padding: 15px;
   font-size: 20px;
@@ -38,6 +46,7 @@ const NavBarContainer = styled.div`
 `;
 
 const MobileNavBarImageContainer = styled.div``;
+
 const MobileNavBarImage = styled.img`
   display: flex;
   height: 50px;
