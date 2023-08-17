@@ -62,7 +62,6 @@ const Contact = () => {
 
 const ContactFormWrapper = styled.div`
   width: 100%;
-
   @media (min-width: 500px) {
   }
 `;
@@ -97,18 +96,12 @@ const button = styled.button`
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  /* max-width: 475px; */
   margin-top: 32px;
   padding: 10%;
   align-content: space-between;
   background: white;
-  /* border-radius: 16px; */
-  /* margin-left: 10px; */
-  /* margin: 5%; */
   border-radius: 5px;
-  /* width: 100%; */
   gap: 10px;
-  /* background-color: yellow; */
 `;
 
 const SocialMediaImageContainer = styled.div`

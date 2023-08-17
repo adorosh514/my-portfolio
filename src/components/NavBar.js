@@ -20,10 +20,9 @@ const NavBar = () => {
 };
 
 const NavBarWrapper = styled.div`
-  background-color: green;
-
   @media (min-width: 500px) {
-    background-color: rebeccapurple;
+    background-color: lightgrey;
+    opacity: 0.5;
   }
 `;
 
@@ -31,15 +30,11 @@ const NavBarContainer = styled.div`
   display: none;
   flex-direction: column;
   align-items: flex-start;
-  /* position: fixed; */
-  /* margin: 0px; */
   padding: 15px;
   font-size: 20px;
   font-family: cyreal;
   font-weight: bolder;
   text-decoration: none;
-  /* color: black; */
-  /* row-gap:  */
   @media (min-width: 500px) {
     display: flex;
   }

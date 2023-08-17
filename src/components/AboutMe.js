@@ -6,7 +6,16 @@ const AboutMe = () => {
   return (
     <div>
       <h1>About Me</h1>
-      <p>A little about myself....</p>
+      <p>I'm a webDeveloper born and raised in Victoria, BC,</p>
+      <p>and currently residing in Montreal, QC!</p>
+      <p>I consider myself to be very vibrant, and outgoing.</p>
+      <p>When I'm offline I live an active lifestyle,</p>
+      <p>with some of my interests including:</p>
+      <p>travel, reading, horseback riding,</p>
+      <p>snowboarding, music and the arts.</p>
+      <p>I have been honing my skills in</p>
+      <p>HTML, CSS, Javascript, and React,</p>
+      <p>and learning how to build beautiful, functional websites.</p>
       <div>
         <TechStackWrapper>
           <TechStackHeaderContainer>
@@ -33,14 +42,12 @@ const TechStackWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 50px;
-  /* background-color: purple; */
 `;
 
 const TechStackHeaderContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 2px;
-  /* background-color: green; */
 `;
 
 const ArrowImage = styled.img`
@@ -53,14 +60,12 @@ const ImageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: yellow; */
 `;
 
 const LogoImage = styled.img`
   display: flex;
   height: 40px;
   width: 40px;
-  /* background-color: pink; */
 `;
 
 export default AboutMe;
